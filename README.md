@@ -1,8 +1,6 @@
 ## Anime Recommendation System
 =======================
 
-### Matt Carey, Kai Hansen, Paula M-Bailey, Steve Njoroge, and Mohammed Qurneh
-
 ## **Introduction**
 
 With humble beginning that trace to late 19th century Japan, Anime has become global phenomenon captivating audiences.  As the number of titles grows, discovering new titles can be overwhelming.  This is where an anime recommender system can be beneficial.  
