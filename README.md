@@ -17,7 +17,8 @@ A recommendation system is an algorithm designed to suggest relevant products to
 
 
 ## **The Data**
-This project contains two datasets, one with the anime rating and the other with information describing the anime itself.  Both datasets is located from Kaggle. https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database?select=rating.csv 
+This project contains two datasets, one with the anime rating and the other with information describing the anime itself.  https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database?select=rating.csv
+
 
 User data contains 7.8 million entries of user ratings.
 
