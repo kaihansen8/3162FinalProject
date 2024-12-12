@@ -39,7 +39,7 @@ Includes:
 
 <img src="images/Pix1.png" alt="Description" width="600" height="600" />
 
-<img src="images/Pix2.png" alt="Description" width="600" height="600" />
+<img src="images/Pix2.png" alt="Description" width="600" height="650" />
 
 ## **Modeling**
 ### Cosine Similarity
