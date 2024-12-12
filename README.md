@@ -45,6 +45,8 @@ This shows the distribution of ratings, members, ways the anime is shown, and di
 
 <img src="images/Pix2.png" alt="Description" width="600" height="650" />
 
+This shows the top 10 anime titles viewed by users.
+
 ## **Modeling**
 ### Cosine Similarity
 
