@@ -37,7 +37,11 @@ Includes:
 
 ## **Pre-Processing**
 
+Out of the 7.8 million reviews, we see no null values are present, meaning we do not need to remove any observations.  Next, we split our genre into 3 separate features, capturing the first 3 genres assigned to the specific anime piece. As part of the pre-processing step, we will want to remove outliers in our datasets. This is because outliers weigh and skew the recommender system to produce less than optimal results. Another critical part of the pre-processing step is to convert the object data into integer values that our system can read. Using the OneHotEncoder, we can create a list of 0's and 1's, assigning the label depending on whether the feature has the specific object or not. For example, let’s say we Action, Comedy, Drama, the OneHotEncoder turns genre_1 into [Action, Comedy, Drama] then into [1, 0, 0] for if the feature has it or not. That list there would show the data's genre for genre_1 would have an action label. This allows for a readable version for our recommender system. Finally, we standardize our features. This is important, because unstandardized features could allow for larger weights and create heavier pulls for features that should not have it. By standardizing, we put all features on an even playing field and allow each individual feature to uniquely express itself.
+
 <img src="images/Pix1.png" alt="Description" width="600" height="600" />
+
+This shows the distribution of ratings, members, ways the anime is shown, and distribution it is shown. For the ratings, we see that majority of the ratings are around a 7, with there being higher and lower ratings. This gives a baseline at potentially the sort of rating we expect to use to recommend to the user. With majority being 6 or higher, its highly unlikely that our system may recommend a piece that is rated less than that. As for distribution of members, we see a majority of anime pieces have a smaller viewer audience. For distribution of episodes, we see that while larger pieces exists, majority hang around 100 or less, indicating majority of users and pieces do not create and enjoy larger amounts of episodes. As for the distribution of type of showing, we see the majority of viewers enjoy either movies, TV series or original video animations (Anime shown straight to home through things like VCRs in the 80's, as opposed through a TV channel or movie theater)
 
 <img src="images/Pix2.png" alt="Description" width="600" height="650" />
 
@@ -70,9 +74,35 @@ It begins with access to user data. Next, a content-based matrix is created base
 It measures the cosine of the angle between the vectors and produces a value between -1 and 1. A value of 1 suggests that 𝑥 and 𝑦 are very similar in tastes. A value of 0 suggests that 𝑥 and 𝑦 don’t share any interests, while a value of -1 suggests that 𝑥 and 𝑦 have opposite interests.
 
 ### Feature Selection
+Features used to calculate similarity:
+- Type
+- Number of Episodes
+- Average Rating
+- Popularity
+- Genres previouslyPrimary, Secondary and Tertiary
+
+A similarity matrix was generated where each anime is compared to every other anime based on the above features
+	
+Recommendation Strategy
+For each user:
+- Identify anime they rated 7 or above.
+- Find the 5 most similar anime for each highly rated title.
+- Rank suggestions to create a list of the top 5 recommendations
 
 
-## **Evaluation**
+## **Evaluation Metrics**
+Coverage: 37%
+- The percentage of anime titles that appear in at least one user’s recommendation.
+- Indicates the system recommends a moderate portion of the total available titles.
+
+Diversity: 0.22
+- Measures how dissimilar the recommended items are within a user’s list.
+- Suggests the recommendation are  highly similar to one another.
+- Indicates a bias toward popular genres
+
+Insights
+- The system successfully generates recommendations but favors popular genres and lacks variety.
+- Improving diversity and expanding coverage to niche titles would enhance system performance.
 
 
 ## **Impacts**
