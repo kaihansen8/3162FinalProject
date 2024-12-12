@@ -71,12 +71,27 @@ It measures the cosine of the angle between the vectors and produces a value bet
 
 ### Feature Selection
 
+
 ## **Evaluation**
 
-## **Impacts**
-An anime recommendation system can have a positive and negative impact on the user.  Of course, personalizing recommendations for users can enhance their viewing experience.   By introducing users to new titles,  we are stimulating interest in the genre which may have the ability to drive sales of merchandise and streaming subscriptions.  In addition, these sales can provide financial support to small studios that may struggle with visibility in the ever-growing market.
 
-On the negative side, an effective recommendation system can increase screen time for users which can lead to social isolation and addictive behavior, according to some studies.  Lastly, depending on the system created, we may invertedly provide users with the same type or style of anime rather than the intended new and lesser-known titles.
+## **Impacts**
+Positive Impacts
+Enhanced User Experience:
+- Provides personalized recommendations based on user viewer history
+- Introduces users to new titles and expands their interests.
+Merchandising and Revenue Growth:
+- Promotes engagement with specific genres or franchises, supporting merchandise sales.
+- Encourages further exploration within the app, increasing subscription retention.
+Time-Saving and Community Engagement:
+- Saves users time by curating relevant content.
+- Builds engagement among users within the community and subscription base.
+
+
+Negative Impacts
+- Reduced variety by recommending similar titles repeatedly may limit exposure to new, diverse content.
+- User isolation since heavy reliance on personalized services may lead to increased isolation and reduced social interaction.
+
 
 ## **Conclusion**
 From our recommendery system, we see that we were able to successfully create a system that can highlight potential pieces of anime for a viewer. To test this out, it would be good to actually look at the recommended pieces of anime this system would give for you individually, and see if you like its recommendations. There were some issues though with the system, which we believe come from the data. The coverage of anime pieces and diversity of recommendations was not as high as one may like. This could be for a large range of factors, but based on the visualization, we can paint a picture why. When looking at our recommendations, we saw high amounts of products that contained genres with action, comedy, adventure, drama, and fantasy. Yet is saw very small representation in genres such as cars, vampires, and super powers. By having such large and potentially over-represented pieces, our system forms a bias against these other pieces, especially when ratings are factored in. Now, this could be normal as well. Its possible that the anime community as a whole does not value those latter genres. To make the recommender system more accurate and potentially cover more pieces, it would be good to collect larger datasets with wider range of genres covered, for the system to get a better understanding. But playing the other side of the coin, it could also be possible that are system is catching a trend in what genres people enjoy viewing, and signal what genres should potentially not be created in high demand.
