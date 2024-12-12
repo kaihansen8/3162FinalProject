@@ -1,5 +1,6 @@
-## Anime Recommendation System
+Anime Recommendation System
 =======================
+Matt Carey, Kai Hansen, Paula M-Bailey, Steve Njoroge, and Mohammed Qurneh
 
 ## **Introduction**
 
